@@ -21,27 +21,42 @@
 }
 
 @keyframes glowing {
-0% {
-  background-color: #2cb200;
-  box-shadow: 0 0 5px #2cb200;
+  0% {
+    opacity: 0.0;
+    background-color: #2cb200;
+    box-shadow: 0 0 5px #2cb200;
+  }
+  20% {
+    opacity: 1.0;
+    background-color: #40de0b;
+    box-shadow: 0 0 20px #40de0b;
+  }
+  30% {
+    opacity: 1.0;
+    background-color: #2cb200;
+    box-shadow: 0 0 5px #2cb200;
+  }
+  50% {
+    opacity: 1.0;
+    background-color: #40de0b;
+    box-shadow: 0 0 20px #40de0b;
+  }
+  100% {
+    opacity: 0.0;
+    background-color: #2cb200;
+    box-shadow: 0 0 5px #2cb200;
+  }
 }
-50% {
-  background-color: #40de0b;
-  box-shadow: 0 0 20px #40de0b;
-}
-100% {
-  background-color: #2cb200;
-  box-shadow: 0 0 5px #2cb200;
-}
-}
+
 .button {
-animation: glowing 1900ms infinite;
+animation: glowing 4s infinite;
 }
 
 /* The Solution images */
 .solnimg {
-  margin-top: 135px;
-  margin-left: -80px;
+  margin-top: 180px;
+  margin-left: 0px;
+  width: 414px;
 }
         
 /* Setting the frame for the soln images simulating the DeepSleep app screen */
@@ -85,7 +100,7 @@ animation: glowing 1900ms infinite;
   margin-top: -760px;
   margin-left: 40px;  
   border-right: solid 1px hsla(145, 50%, 40%, .3);
-  width: 164px; height: 164px;
+  width: 168px; height: 168px;
   border-radius: 100% 0 0 0;
   transform-origin: 100% 100%;  
   background: linear-gradient(50deg, rgba(34, 34, 34, 0) 36%, rgb(155, 156, 155));
